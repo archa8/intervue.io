@@ -5,20 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Intervue.io</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Sora', sans-serif;
     }
   </style>
-  <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-white text-gray-800">
   <!--header-->
-  <header class="flex flex-col sm:flex-row items-start sm:items-center justify-between p-4">
+  <header class="flex flex-col sm:flex-row items-start sm:items-center justify-between p-6">
     <img src="intervue-logo.png" alt="" class="h-6 sm:h-8">
-    <div class="flex gap-2 mt-2 sm:mt-0">
-      <button>Become an interviewer</button>
+    <div class="flex gap-4 mt-2 sm:mt-0 px-2">
+      <button class="flex items-center gap-2 px-4 py-2 font-semibold">
+        <i data-lucide="user-round" class="w-4 h-4"></i>
+        <span>Become an interviewer</span>
+        <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+      </button>
       <button>Features</button>
       <button>Pricing</button>
       <button>Start a trial</button>
@@ -28,125 +32,238 @@
   </header>
 
   <!--hero-->
+  <br>
   <div class="text-center my-8">
-    <h2 class="text-2xl font-normal">Technical Interview Resources</h2>
-    <p class="text-gray-600">Find all the technical interview resources here</p>
+    <h2 class="mb-2 text-2xl font-normal">Technical Interview Resources</h2>
+    <p class="text-gray-600 text-sm">Find all the technical interview resources here</p>
   </div>
   <div class="flex justify-center mb-8">
-    <input type="text" placeholder="Search for resources here" class="bg-gray-100 rounded-3xl px-4 py-2 w-1/2">
+    <div class="relative w-1/3">
+      <i data-lucide="search" class="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-500"></i>
+      <input type="text" placeholder="Search for resources here" class="bg-gray-100 rounded-3xl pl-10 pr-4 py-3 w-full placeholder-gray-500 focus:outline-none"/>
+    </div>
   </div>
 
   <!--resources-->
-  <div class="grid gap-4 px-4 sm:grid-cols-2 lg:grid-cols-3">
-    <div class="border p-4 rounded-lg bg-white">
-      <span class="inline-block bg-blue-700 text-white text-xs font-semibold px-2 py-1 rounded mb-2">Easy</span>
-      <p class="font-medium font-semibold">Design a Free Food App</p>
+  <div class="grid px-4 sm:grid-cols-2 lg:grid-cols-3 mb-6">
+    <div class="max-w-sm w-full mx-auto border-2 p-4 rounded-xl bg-white">
+      <span class="inline-block bg-blue-700 text-white text-xs font-semibold px-2 py-1 rounded mb-4 mr-4">Easy</span>
+      <span class="text-sm text-gray-500">DATA STRUCTURES & ALGORITHMS</span>
+      <p class="font-medium font-semibold mb-2">Design a Free Food App</p>
+      <p class="text-gray-500 text-sm">We created this guide after speaking with our community of interviewers, which includes over 100 current and former Amazon engineers, as well as our corpus of mock interviews</p>
     </div>
-    <div class="border p-4 rounded-lg bg-white">
-      <span class="inline-block bg-orange-400 text-white text-xs font-semibold px-2 py-1 rounded mb-2">Medium</span>
-      <p class="font-medium font-semibold">Design a Free Food App</p>
+    <div class="max-w-sm w-full mx-auto border-2 p-4 rounded-xl bg-white">
+      <span class="inline-block bg-orange-400 text-white text-xs font-semibold px-2 py-1 rounded mb-2 mr-4">Medium</span>
+      <span class="text-sm text-gray-500">DATA STRUCTURES & ALGORITHMS</span>
+      <p class="font-medium font-semibold mb-2">Design a Free Food App</p>
+      <p class="text-gray-500 text-sm">We created this guide after speaking with our community of interviewers, which includes over 100 current and former Amazon engineers, as well as our corpus of mock interviews</p>
     </div>
-    <div class="border p-4 rounded-lg bg-white">
-      <span class="inline-block bg-green-400 text-white text-xs font-semibold px-2 py-1 rounded mb-2">Hard</span>
+    <div class="max-w-sm w-full mx-auto border-2 p-4 rounded-xl bg-white">
+      <span class="inline-block bg-green-400 text-white text-xs font-semibold px-2 py-1 rounded mb-2 mr-4">Hard</span>
+      <span class="text-sm text-gray-500">DATA STRUCTURES & ALGORITHMS</span>
       <p class="font-medium font-semibold">Design a Free Food App</p>
-    </div>
-  </div>
-
-  <div class="grid gap-4 px-4 sm:grid-cols-2 lg:grid-cols-3">
-    <div class="border p-4 rounded-lg bg-white">
-      <span class="inline-block bg-blue-700 text-white text-xs font-semibold px-2 py-1 rounded mb-2">Easy</span>
-      <p class="font-medium font-semibold">Design a Free Food App</p>
-    </div>
-    <div class="border p-4 rounded-lg bg-white">
-      <span class="inline-block bg-orange-400 text-white text-xs font-semibold px-2 py-1 rounded mb-2">Medium</span>
-      <p class="font-medium font-semibold">Design a Free Food App</p>
-    </div>
-    <div class="border p-4 rounded-lg bg-white">
-      <span class="inline-block bg-green-400 text-white text-xs font-semibold px-2 py-1 rounded mb-2">Hard</span>
-      <p class="font-medium font-semibold">Design a Free Food App</p>
+      <p class="text-gray-500 text-sm">We created this guide after speaking with our community of interviewers, which includes over 100 current and former Amazon engineers, as well as our corpus of mock interviews</p>
     </div>
   </div>
 
-  <div class="grid gap-4 px-4 sm:grid-cols-2 lg:grid-cols-3">
-    <div class="border p-4 rounded-lg bg-white">
-      <span class="inline-block bg-blue-700 text-white text-xs font-semibold px-2 py-1 rounded mb-2">Easy</span>
-      <p class="font-medium font-semibold">Design a Free Food App</p>
+  <div class="grid px-4 sm:grid-cols-2 lg:grid-cols-3 mb-6">
+    <div class="max-w-sm w-full mx-auto border-2 p-4 rounded-xl bg-white">
+      <span class="inline-block bg-blue-700 text-white text-xs font-semibold px-2 py-1 rounded mb-4 mr-4">Easy</span>
+      <span class="text-sm text-gray-500">DATA STRUCTURES & ALGORITHMS</span>
+      <p class="font-medium font-semibold mb-2">Design a Free Food App</p>
+      <p class="text-gray-500 text-sm">We created this guide after speaking with our community of interviewers, which includes over 100 current and former Amazon engineers, as well as our corpus of mock interviews</p>
     </div>
-    <div class="border p-4 rounded-lg bg-white">
-      <span class="inline-block bg-orange-400 text-white text-xs font-semibold px-2 py-1 rounded mb-2">Medium</span>
-      <p class="font-medium font-semibold">Design a Free Food App</p>
+    <div class="max-w-sm w-full mx-auto border-2 p-4 rounded-xl bg-white">
+      <span class="inline-block bg-orange-400 text-white text-xs font-semibold px-2 py-1 rounded mb-2 mr-4">Medium</span>
+      <span class="text-sm text-gray-500">DATA STRUCTURES & ALGORITHMS</span>
+      <p class="font-medium font-semibold mb-2">Design a Free Food App</p>
+      <p class="text-gray-500 text-sm">We created this guide after speaking with our community of interviewers, which includes over 100 current and former Amazon engineers, as well as our corpus of mock interviews</p>
     </div>
-    <div class="border p-4 rounded-lg bg-white">
-      <span class="inline-block bg-green-400 text-white text-xs font-semibold px-2 py-1 rounded mb-2">Hard</span>
+    <div class="max-w-sm w-full mx-auto border-2 p-4 rounded-xl bg-white">
+      <span class="inline-block bg-green-400 text-white text-xs font-semibold px-2 py-1 rounded mb-2 mr-4">Hard</span>
+      <span class="text-sm text-gray-500">DATA STRUCTURES & ALGORITHMS</span>
       <p class="font-medium font-semibold">Design a Free Food App</p>
-    </div>
-  </div>
-
-  <div class="grid gap-4 px-4 sm:grid-cols-2 lg:grid-cols-3">
-    <div class="border p-4 rounded-lg bg-white">
-      <span class="inline-block bg-blue-700 text-white text-xs font-semibold px-2 py-1 rounded mb-2">Easy</span>
-      <p class="font-medium font-semibold">Design a Free Food App</p>
-    </div>
-    <div class="border p-4 rounded-lg bg-white">
-      <span class="inline-block bg-orange-400 text-white text-xs font-semibold px-2 py-1 rounded mb-2">Medium</span>
-      <p class="font-medium font-semibold">Design a Free Food App</p>
-    </div>
-    <div class="border p-4 rounded-lg bg-white">
-      <span class="inline-block bg-green-400 text-white text-xs font-semibold px-2 py-1 rounded mb-2">Hard</span>
-      <p class="font-medium font-semibold">Design a Free Food App</p>
+      <p class="text-gray-500 text-sm">We created this guide after speaking with our community of interviewers, which includes over 100 current and former Amazon engineers, as well as our corpus of mock interviews</p>
     </div>
   </div>
 
-  <br>
-  <br>
-  <br>
-  <br>
+  <div class="grid px-4 sm:grid-cols-2 lg:grid-cols-3 mb-6">
+    <div class="max-w-sm w-full mx-auto border-2 p-4 rounded-xl bg-white">
+      <span class="inline-block bg-blue-700 text-white text-xs font-semibold px-2 py-1 rounded mb-4 mr-4">Easy</span>
+      <span class="text-sm text-gray-500">DATA STRUCTURES & ALGORITHMS</span>
+      <p class="font-medium font-semibold mb-2">Design a Free Food App</p>
+      <p class="text-gray-500 text-sm">We created this guide after speaking with our community of interviewers, which includes over 100 current and former Amazon engineers, as well as our corpus of mock interviews</p>
+    </div>
+    <div class="max-w-sm w-full mx-auto border-2 p-4 rounded-xl bg-white">
+      <span class="inline-block bg-orange-400 text-white text-xs font-semibold px-2 py-1 rounded mb-2 mr-4">Medium</span>
+      <span class="text-sm text-gray-500">DATA STRUCTURES & ALGORITHMS</span>
+      <p class="font-medium font-semibold mb-2">Design a Free Food App</p>
+      <p class="text-gray-500 text-sm">We created this guide after speaking with our community of interviewers, which includes over 100 current and former Amazon engineers, as well as our corpus of mock interviews</p>
+    </div>
+    <div class="max-w-sm w-full mx-auto border-2 p-4 rounded-xl bg-white">
+      <span class="inline-block bg-green-400 text-white text-xs font-semibold px-2 py-1 rounded mb-2 mr-4">Hard</span>
+      <span class="text-sm text-gray-500">DATA STRUCTURES & ALGORITHMS</span>
+      <p class="font-medium font-semibold">Design a Free Food App</p>
+      <p class="text-gray-500 text-sm">We created this guide after speaking with our community of interviewers, which includes over 100 current and former Amazon engineers, as well as our corpus of mock interviews</p>
+    </div>
+  </div>
+
+  <div class="grid px-4 sm:grid-cols-2 lg:grid-cols-3 mb-80">
+    <div class="max-w-sm w-full mx-auto border-2 p-4 rounded-xl bg-white">
+      <span class="inline-block bg-blue-700 text-white text-xs font-semibold px-2 py-1 rounded mb-4 mr-4">Easy</span>
+      <span class="text-sm text-gray-500">DATA STRUCTURES & ALGORITHMS</span>
+      <p class="font-medium font-semibold mb-2">Design a Free Food App</p>
+      <p class="text-gray-500 text-sm">We created this guide after speaking with our community of interviewers, which includes over 100 current and former Amazon engineers, as well as our corpus of mock interviews</p>
+    </div>
+    <div class="max-w-sm w-full mx-auto border-2 p-4 rounded-xl bg-white">
+      <span class="inline-block bg-orange-400 text-white text-xs font-semibold px-2 py-1 rounded mb-2 mr-4">Medium</span>
+      <span class="text-sm text-gray-500">DATA STRUCTURES & ALGORITHMS</span>
+      <p class="font-medium font-semibold mb-2">Design a Free Food App</p>
+      <p class="text-gray-500 text-sm">We created this guide after speaking with our community of interviewers, which includes over 100 current and former Amazon engineers, as well as our corpus of mock interviews</p>
+    </div>
+    <div class="max-w-sm w-full mx-auto border-2 p-4 rounded-xl bg-white">
+      <span class="inline-block bg-green-400 text-white text-xs font-semibold px-2 py-1 rounded mb-2 mr-4">Hard</span>
+      <span class="text-sm text-gray-500">DATA STRUCTURES & ALGORITHMS</span>
+      <p class="font-medium font-semibold">Design a Free Food App</p>
+      <p class="text-gray-500 text-sm">We created this guide after speaking with our community of interviewers, which includes over 100 current and former Amazon engineers, as well as our corpus of mock interviews</p>
+    </div>
+  </div>
+
   <!--security-->
-  <section class="bg-gray-100 py-12 px-4">
-    <h3 class="text-xl font-semibold mb-6">Security is our top priority</h3>
+  <section class="bg-gray-100 py-12 px-4 flex justify-center items-center">
+    <div class="max-w-[90%]">
+      <h3 class="text-3xl font-normal mb-6">Security is our top priority</h3>
     <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-      <div class="bg-white border p-4 shadow inset-shadow">Security</div>
-      <div class="bg-white border p-4 shadow inset-shadow">Compliance</div>
-      <div class="bg-white border p-4 shadow inset-shadow">Intervue for Startups</div>
-      <div class="bg-white border p-4 shadow inset-shadow">Intervue for Enterprises</div>
+      <div class="bg-white border p-4 shadow rounded inset-shadow flex flex-col items-start">
+        <i data-lucide="key" class="w-6 h-6 text-black mb-2"></i>
+        <div class="font-semibold mb-2">Security</div>
+        <div class="text-gray-600 mb-6">Protecting your data at every layer is fundamental to how Intervue works</div>
+        <i data-lucide="arrow-right" class=""></i>
+      </div>
+
+      <div class="bg-white border p-4 shadow rounded inset-shadow flex flex-col items-start">
+        <i data-lucide="layers" class="w-6 h-6 text-black mb-2"></i>
+        <div class="font-semibold mb-2">Compliances</div>
+        <div class="text-gray-600 mb-6">Enterprise grade compliance commitments where we have established controls to adhere to those commitments</div>
+        <i data-lucide="arrow-right" class=""></i>
+      </div>
+      
+      <div class="grid grid-rows-2 gap-4">
+        <div class="bg-white border p-4 shadow inset-shadow">Intervue for Startups</div>
+        <div class="bg-white border p-4 shadow inset-shadow">Intervue for Enterprises</div>
+      </div>
     </div>
+    </div>
+    
   </section>
 
   <!--testimonial-->
-  <section class="bg-gray-50 py-12 px-4 text-center">
-    <h3 class="text-xl font-semibold mb-4">Customer Testimonial</h3>
-    <img src="yubi.png" class="w-full max-w-lg mx-auto rounded-lg">
-    <p class="mt-4 text-black-600">After interviewing candidates on Intervue, we were able to convert at least 5% of people from our application base to hires.</p>
-    <br>
-    <p class="mt-4 text-black font-semibold">Niket Gupta</p>
-    <p>Group head of talent acquisition, Yubi</p>
-    <br>
-    <button class="text-indigo-600 font-semibold">See more customer stories</button>
+  <section class="flex justify-center items-center">
+    <div class="max-w-[90%]">
+      <div class="bg-gray-50 py-12 px-4 text-center flex items-center justify-between width-full gap-10">
+      <div class="width-[50%]">
+        <img src="yubi.png" class="mx-auto rounded-r-full">
+      </div>
+    <div class="width-[40%]">
+      <div class="text-left">
+        <p class="mt-4 text-black-600 mb-4">After interviewing candidates on Intervue, we were able to convert at least 5% of people from our application base to hires.</p>
+        <p class="mt-4 text-black font-semibold">Niket Gupta</p>
+        <p>Group head of talent acquisition, Yubi</p>
+        <br>
+        <button class="text-indigo-600 font-semibold">See more customer stories</button>
+      </div>
+    </div>
+    </div>
+    
+    </div>
+    
   </section>
 
   <!--products-->
-  <section class="bg-gray-50 py-12 px-4">
-    <h3 class="text-xl mb-6 text-center">Explore more products on intervue</h3>
+  <section class="bg-gray-50 py-12 px-4 flex justify-center items-center">
+    <div class="max-w-[90%]">
+      <h3 class="text-3xl mb-6 text-center">Explore more products on intervue</h3>
     <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-      <div class="bg-white border p-4 rounded">On-demand</div>
-      <div class="bg-white border p-4 rounded">Live interviews</div>
-      <div class="bg-white border p-4 rounded">Assessments</div>
+      <div class="bg-white border p-4 rounded">
+        <div>
+          <img src="card.jpg" alt="">
+        </div>
+        <div class="flex flex-col items-start justify-between text-left">
+          <div>
+            <div class="font-bold">Assessments</div>
+            <div class="text-gray-600">
+            Save 90% of engineering & recruitment bandwidth, outsource candidate interviews to us
+            </div>
+          </div>
+          <button class="mt-4 pr-4 py-2 text-indigo-600 ">Try now</button>
+        </div>
+        
+      </div>
+      <div class="bg-white border p-4 rounded">
+        <div>
+          <img src="card.jpg" alt="">
+        </div>
+        <div class="flex flex-col items-start justify-between text-left">
+          <div>
+            <div class="font-bold">Assessments</div>
+            <div class="text-gray-600">
+            Save 90% of engineering & recruitment bandwidth, outsource candidate interviews to us
+            </div>
+          </div>
+          <button class="mt-4 pr-4 py-2 text-indigo-600 ">Try now</button>
+        </div>
+        
+      </div>
+      <div class="bg-white border p-4 rounded">
+        <div>
+          <img src="card.jpg" alt="">
+        </div>
+        <div class="flex flex-col items-start justify-between text-left">
+          <div>
+            <div class="font-bold">Assessments</div>
+            <div class="text-gray-600">
+            Save 90% of engineering & recruitment bandwidth, outsource candidate interviews to us
+            </div>
+          </div>
+          <button class="mt-4 pr-4 py-2 text-indigo-600 ">Try now</button>
+        </div>
+        
+      </div>
+      
     </div>
+    </div>
+    
   </section>
 
   <!--faq-->
-  <section class="bg-pink-50 py-12 px-4">
-    <h3 class="text-x1 mb-6">FAQs</h3>
-    <div class="space-y-4">
-      <div class="font-medium">How do I schedule an interview?</div>
-      <div class="font-medium">Will I be charged per interview?</div>
-      <div class="font-medium">Can I get a trial for On-demand interviews?</div>
+  <section class="bg-pink-50 py-12 px-4 flex justify-center items-center">
+    <div class="max-w-[90%] flex justify-between items-center gap-10">
+      <div class="text-left flex flex-col gap-4">
+        <div>
+          <h3 class="text-x1 mb-6 text-xl">FAQs</h3>
+        <div class="">
+        Here are some frequntly asked questions.
+        </div>
+        </div>
+        <div>
+          <div>
+        Still have doubts?
+        </div>
+        <button>Talk to our representative</button>
+        </div>
+      </div>
+      <div class="space-y-4">
+        <div class="font-medium">How do I schedule an interview?</div>
+        <div class="font-medium">Will I be charged per interview?</div>
+        <div class="font-medium">Can I get a trial for On-demand interviews?</div>  
+      </div>
     </div>
   </section>
 
   <!--footer-->
-  <footer class="bg-gray-900 text-white py-12 px-4">
-    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+  <footer class="bg-gray-900 text-white py-12 px-4 flex justify-center items-center">
+    <div class="max-w-[90%]">
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
       <div>
         <h4 class="font-semibold text-lg">Hire better and faster</h4>
         <input type="email" placeholder="Enter your email address" class="mt-2 w-full px-4 py-2 text-black rounded">
@@ -165,6 +282,12 @@
       </div>
     </div>
     <p class="text-center text-sm mt-8">&copy; 2025 Intervue. All rights reserved.</p>
+    </div>
+    
   </footer>
+  <script>
+    lucide.createIcons();
+  </script>
+
 </body>
 </html>
